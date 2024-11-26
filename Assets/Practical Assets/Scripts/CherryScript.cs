@@ -51,4 +51,17 @@ public class CherryScript : MonoBehaviour
 		
 		transform.position = new Vector3 (x, transform.position.y, z);
 	}
+
+		private void HouseReturn()
+	{
+		float x = Random.Range (-spawnArea, spawnArea);
+		float z = Random.Range (-spawnArea, spawnArea);
+
+		spawned = Time.time;
+		spawnTime = Random.Range (0.0f, timeLimit);
+		
+		transform.position = new Vector3 (x, transform.position.y, z);
+	}
+
 }
+
